@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    color: aliceblue;
+}
+body{
+    background-size: cover;
+    background-image: url(bgimg.jpg);
+    animation-name: test;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+@keyframes test{
+    0%{
+        background-image: url(bgimg.jpg);
+    }
+    50%{
+        background-image: url(backhill.jpg);
+    }
+    100%{
+        background-image: url(bgimg.jpg);
+    }
+}
+.logo{
+    position: absolute;
+    left:50px;
+    top:25px;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: underline;
+}
+.menu ul{
+    
+    display: flex;
+}
+.menu ul li{
+    position: relative;
+    top: 25px;
+    left: 500px;
+    list-style: none;
+    text-align: center;
+    width: 107px;
+    height :26px;
+    padding: 5px;
+    
+}
+.active , .menu ul li:hover{
+     border: 1px solid white;
+     cursor: pointer;
+     transition: 0.2s;
+     position: relative;
+     color:greenyellow;
+     font-size: 15px;
+
+}
+.logo h4{
+    font-size: 11px;
+    position: absolute;
+    left: 24px;
+    width: 117px;
+    top: 42px;
+    font-family: 'Dancing Script', cursive;
+}
+/* navbar end here */
+.enquiry{
+    position: relative;
+    left: 529px;
+    top: 81px;
+    box-sizing: border-box;
+    width: 320px;
+    height: 385px;
+}
+.heading{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    width: 201px;
+    height: 65px;
+    left: 52px;
+    position: absolute;
+    font-size: 24px;
+}
+.input input{
+    font-family: 'Quicksand', sans-serif;
+    height: 65px;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    padding-left: 5px;
+    float: left;
+    font-weight: bolder;
+    background-color: transparent;
+    color: white;
+}
+.input select{
+        font-family: 'Quicksand', sans-serif;
+        height: 65px;
+        width: 100%;
+        position: absolute;
+        top: 150px;
+        padding-left: 5px;
+        float: left;
+        font-weight: bolder;
+        background-color: transparent;
+        color:white(128, 36, 36);
+}
+.input select option{
+    color: black;
+}
+#start{
+    position: absolute;
+    width: 47%;
+    height: 65px;
+    top:170px;
+}
+#end{
+    position: absolute;
+    width: 47%;
+    height: 65px;
+    top:170px;
+    left:51%;
+}
+.input button{
+    position: absolute;
+    top: 319px;
+    left: 90px;
+    height: 45px;
+    background-color: red;
+    outline: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+@media only screan and(max-width:600px)
+{
+    .menu ul{
+    
+        display: block;
+    }
+    .menu ul li{
+        position: relative;
+        top: 25px;
+        left: 500px;
+        list-style: none;
+        text-align:left;
+        width: 107px;
+        height :26px;
+        padding: 5px;
+    }
+        
+}
