@@ -94,6 +94,8 @@ body{
     font-weight: bolder;
     background-color: transparent;
     color: white;
+    border: 2 px solid white;
+    text-transform: lowercase;
 }
 .input select{
         font-family: 'Quicksand', sans-serif;
@@ -106,9 +108,7 @@ body{
         font-weight: bolder;
         background-color: transparent;
         color:white(128, 36, 36);
-}
-.input select option{
-    color: black;
+        border: 2px solid white;
 }
 #start{
     position: absolute;
@@ -133,7 +133,7 @@ body{
     border-radius: 10px;
     padding: 5px;
 }
-@media only screan and(max-width:600px)
+@media screan and(max-width:600px)
 {
     .menu ul{
     
@@ -150,4 +150,7 @@ body{
         padding: 5px;
     }
         
+}
+::placeholder{
+    color: aliceblue;
 }
